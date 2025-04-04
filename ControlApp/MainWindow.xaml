@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControlApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="400" Width="400">
+    <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Введите баллы за каждый модуль:" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Модуль 1 (Разработка БД):" Margin="0,40,0,0"/>
+        <TextBox x:Name="Module1Input" Width="100" Height="25" Margin="0,70,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Модуль 2 (Разработка ПО):" Margin="0,100,0,0"/>
+        <TextBox x:Name="Module2Input" Width="100" Height="25" Margin="0,130,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Модуль 3 (Сопровождение ПО):" Margin="0,160,0,0"/>
+        <TextBox x:Name="Module3Input" Width="100" Height="25" Margin="0,190,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Button Content="Рассчитать" Width="100" Height="30" Margin="0,230,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="CalculateButton_Click"/>
+
+        <TextBlock x:Name="ResultOutput" Text="Результат:" FontSize="16" FontWeight="Bold" Margin="0,270,0,0"/>
     </Grid>
 </Window>
