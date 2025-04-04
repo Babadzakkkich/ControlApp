@@ -96,8 +96,7 @@ namespace UnitTestForApp
         [ExpectedException(typeof(FormatException))]
         public void Test_InvalidInput_LettersInsteadOfNumbers()
         {
-            // Смоделируем ситуацию, когда пользователь вводит буквы вместо чисел
-            int module1Score = int.Parse("abc"); // Это вызовет FormatException
+            int module1Score = int.Parse("abc");
             int module2Score = 20;
             int module3Score = 10;
 
@@ -108,8 +107,7 @@ namespace UnitTestForApp
         [ExpectedException(typeof(FormatException))]
         public void Test_InvalidInput_EmptyFields()
         {
-            // Смоделируем ситуацию, когда пользователь не ввел данные (пустые строки)
-            int module1Score = int.Parse(""); // Это вызовет FormatException
+            int module1Score = int.Parse("");
             int module2Score = 20;
             int module3Score = 10;
 
@@ -120,8 +118,7 @@ namespace UnitTestForApp
         [ExpectedException(typeof(ArgumentNullException))]
         public void Test_InvalidInput_NullValues()
         {
-            // Смоделируем ситуацию, когда значения равны null
-            int module1Score = int.Parse(null); // Это вызовет FormatException
+            int module1Score = int.Parse(null);
             int module2Score = 20;
             int module3Score = 10;
 
